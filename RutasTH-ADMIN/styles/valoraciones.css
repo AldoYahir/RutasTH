@@ -1,0 +1,108 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-admin) !important;
+}
+/*-------------Contenido-----------*/
+body{
+  text-align: center;
+}
+.titulo{
+  margin-top: 3rem;
+}
+h1{
+    display: inline-block;
+    position: relative;
+    color: var(--text-color-body);
+}
+h1::after, h1::before{
+  content: '';
+  position: absolute;
+  width: 7.5rem;
+  height: 0.19rem;
+  background-color: currentColor;
+  top: 0.6em;
+}
+/*----------Moveremos las líneas de decoración del títul0---------*/
+h1::before{
+  left: -8.7rem;
+}
+h1::after{
+  right: -8.7rem;
+}
+.salir{
+font-size: 2rem;
+  
+}
+/*----------Primer Contenido - Registro---------*/
+.numCombi{
+  text-align: center;
+  color: var(--text-color-body);
+  padding: 0 20rem;
+}
+.numCombi label{
+  padding: 1.5rem 0;
+}
+.lisComents {
+  overflow-y: scroll;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1rem;
+  max-height: 17.5rem;
+  background-color: var(--text-color-body);
+  
+  margin-top: 2rem;
+}
+.form2{
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: var(--text-color-body) !important;
+    text-align: center;
+}
+.eliminar{
+  border: none;
+  border-radius: 20%;
+  padding: 0 0.3rem;
+  font-size: 1.1rem;
+  text-align: right !important;
+  color: var(--text-color-body);
+  background-color: red;
+  
+}
+.lisComents{
+  margin: 4rem 1rem;
+}
+.lisComents_name{
+  display: flex;
+  align-self: center;
+}
+.caja-coment{
+  display: flex;
+  justify-content: space-between;
+}
+/*----------El contenido del segundo contenedor-Lugares---------*/
+.contenedor{
+  margin: 0rem 7rem;
+}
+.aviso{
+  text-align: center;
+  color: var(--admin-hover);
+}
+@media(max-width:991px){
+  .titulo{
+    margin-top:5rem;
+  }
+  h1::after, h1::before{
+    display: none;
+  }
+  .contenedor{
+    margin: 0 0;
+    padding-bottom: 2rem;
+  }
+  .numCombi{
+    padding: 2rem 5rem;
+  }
+  }

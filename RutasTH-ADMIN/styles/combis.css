@@ -1,0 +1,111 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-admin) !important;
+}
+/*-------------Contenido-----------*/
+body{
+  text-align: center;
+}
+.titulo{
+  margin-top: 3rem;
+}
+h1{
+    display: inline-block;
+    position: relative;
+    color: var(--text-color-body);
+    
+}
+h1::after, h1::before{
+  content: '';
+  position: absolute;
+  width: 7.5rem;
+  height: 0.19rem;
+  background-color: currentColor;
+  top: 0.6em;
+}
+/*----------Moveremos las líneas de decoración del títul0---------*/
+h1::before{
+  left: -8.7rem;
+}
+h1::after{
+  right: -8.7rem;
+}
+.salir{
+font-size: 2rem;
+  
+}
+/*----------Primer Contenido - Registro---------*/
+.registro{
+  padding: 2rem 3rem;
+}
+form{
+  text-align: left;
+  color: var(--text-color-body);
+}
+select{
+  color: var(--text-color-body) !important;
+}
+.form1,
+.form2{
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: var(--text-color-body) !important;
+    text-align: center;
+}
+.btn{
+  background-color: var(--color-admin2) !important;
+}
+.btn-text{
+  color: var(--text-color-body) !important;
+}
+.btn:hover{
+  background-color: var(--admin-hover) !important;
+}
+/*----------El contenido del segundo contenedor-Lugares---------*/
+.contenedor{
+  margin: 4rem 7rem;
+}
+.lugares a{
+  text-decoration: none;
+  color: var(--text-color-body-inverse);
+  pointer-events: none;
+}
+.lisLugares {
+  overflow-y: scroll;
+  font-size: 1rem;
+  max-height: 25rem;
+  background-color: var(--color-cuadritos);
+  padding-top: 1rem;
+}
+/*Boton eliminar*/
+.eliminar{
+  border: none;
+  border-radius: 20%;
+  padding: 0 0.3rem;
+  font-size: 1.1rem;
+  text-align: right !important;
+  color: var(--text-color-body);
+  background-color: red;
+  
+}
+@media(max-width:991px){
+  .titulo{
+    margin-top:5rem;
+  }
+  h1::after, h1::before{
+    display: none;
+  }
+  .contenedor{
+    margin: 0 0;
+  }
+  .registro{
+    padding: 2rem 0 ;
+  }
+  .contenedor2{
+    padding-bottom: 2rem;
+  }
+  }

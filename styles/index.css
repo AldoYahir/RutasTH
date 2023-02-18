@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+*{
+    font-family: 'Epilogue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.textColor {
+    color: var(--text-color-body-inverse);
+}
+/*---------------------------------Navbar---------------------------------*/
+.incisos li a{
+    color: var(--text-color-body-inverse) !important;
+}
+/*-----------hover------------*/
+.puntero:hover {
+    color: var(--color-hover) !important;
+}
+/*-----------------------Bloque 1 - Portada de inicio----------------------*/
+.text-bloque-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-bloque-1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.parrafo-bloque-1{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+/*-----------------------Bloque 2 - Encuentra tu ruta----------------------*/
+.container-all{
+    padding: 2.5rem 0;
+    background-color: var(--color-rutath);
+}
+/*--------- Encabezado - Encuentra tu ruta----------*/
+.title-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+.title{
+    width: 70%;
+    padding-bottom: 2rem;
+    border-bottom: 0.17rem dashed var(--text-color-body);
+}
+/*---------Estilos del checklist - Ubicación-----------*/
+.content-one{
+    padding: 3rem 0;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.opciones-rutas {
+    text-align: center;
+    justify-content: center;
+    width: 90% !important;
+}
+.lisRutas {
+    overflow-y: scroll;
+    font-size: 1.5rem;
+    max-height: 17.5rem;
+}
+.opciones-rutas option{
+    color: var(--text-color-body-inverse);
+}
+.buscador-rutas{
+    background-color: var(--cuadritos-contenedor) !important;
+    border: none;
+    border-radius: 0.43rem;
+    width: 40%;
+    height: 2rem;
+}
+/*-------------------------Lista desplegable de rutas-------------------------*/
+.card {
+    text-align: center;
+    background-color: var(--cuadritos-contenedor);
+}
+.card-body h1{
+    font-size: 1.56rem;
+    font-weight: 400; /*Remarcado de la letra*/
+    color: var(--text-color-body-inverse);
+}
+.icon-lis a{
+    text-decoration: none;
+    color: var(--text-color-body-inverse);
+}
+.puntero-rutas a:hover {
+    color: var(--color-hover);
+}
+/*Boton scrolly que va pa' arriba*/
+.subir2 {
+    display: inline-block;
+    color: var(--color-rutath-tsu);
+    background-color: var(--color-rutath);
+    padding: 0rem 0.5rem;
+    border: solid 0.1rem;
+    border-radius: 3.12rem;
+    font-size:1.57rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1.87rem;
+    right: 1.25rem;
+}
+.subir2:hover {
+    color: var(--color-rutath);
+    background-color: var(--color-rutath-tsu);
+    border: none;
+}
+/*-------------------Carrousel-------------------*/
+.titlle-carrousel{
+    margin-top:25px;
+}
+
+.alternate-font{
+    font-size: 36px;
+    font-family: 'Roboto Condensed', serif !important;
+    text-align: center;
+}
+/*---------------------------------Contenedores footer del pie de página---------------------------------*/
+footer {
+    padding: 1.87rem 0;
+}
+.rayitas{
+    /*border-top: 0.2rem dashed rgba(255, 255, 255, .8);*/
+    padding: 2rem 5rem;
+    background-color: var(--color-rutath);
+}
+.leyenda {
+    font-size: 1.56rem;
+    font-weight: 350; /*Remarcado de la letra*/
+    text-align: center;
+    padding: 0.93rem 0;
+}
+.icon-footer {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 350; /*Remarcado de la letra*/
+    
+}
+.icon-footer a{
+    text-decoration: none;
+    padding: 0.19rem 0.62rem; /*Separacion de las redes sociales*/
+    color: var(--icono-footer) !important;
+}
+.logo-footer {
+    text-align: center;
+}
+@media (max-width: 930px) {
+    /*--------contenedor1 busqueda--------*/
+    .opciones-rutas{
+        font-size: 0.8rem !important;
+        max-width: 100%;
+    }
+    .card img{
+        width: 4rem;
+    }
+    .rayitas{
+        /*border-top: 0.2rem dashed rgba(255, 255, 255, .8);*/
+        padding: 2rem 1rem;
+    }
+}

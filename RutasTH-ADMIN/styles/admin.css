@@ -1,0 +1,15 @@
+:root{
+    --text-color-body:  white;
+    --text-color-body-inverse: black;
+    --color-admin: #011F3A;
+    --color-admin2: #288A85;
+    --color-admin3: #2A557D;
+    --color-cuadritos: #E8D5C2;
+    --admin-hover:#670101;
+    font-size: 16px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}

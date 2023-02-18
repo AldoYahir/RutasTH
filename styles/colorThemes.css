@@ -1,0 +1,14 @@
+:root {
+    
+    --color-rutath: #E8BE4D;
+    --color-rutath-tsu:#150E0C;
+    --text-color-body:  white;
+    --text-color-body-inverse: black;
+    --contenedor-color: #E8D5C2;
+    --cuadritos-contenedor: white;
+    --icono-footer: black;
+    --color-hover: orange;
+    font-size: 16px;
+
+    --color-btn: rgb(40, 214, 205);
+}

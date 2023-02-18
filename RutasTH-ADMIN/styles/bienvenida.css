@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+.bodys{
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("/RutasTH-ADMIN/imagenes/bienvenida.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+}
+/*-----------------------Segundo contenedor-LOGIN--------------------------*/
+h1{
+  display: inline-block;
+  position: relative;
+  color: var(--text-color-body);
+  margin: 3rem 0 !important;
+}
+h1::after, h1::before{
+content: '';
+position: absolute;
+width: 7.5rem;
+height: 0.19rem;
+background-color: currentColor;
+top: 0.6em;
+}
+/*----------Moveremos las líneas de decoración del títul0---------*/
+h1::before{
+left: -8.7rem;
+}
+h1::after{
+right: -8.7rem;
+}
+.tag1, .tag2, .tag3, .tag4{
+  background-color: var(--color-admin3);
+  border:transparent 0.2rem solid;
+}
+.tag1 a{
+  text-decoration: none;
+  color: var(--text-color-body);
+}
+.tag2 a{
+  text-decoration: none;
+  color: var(--text-color-body);
+}
+.tag3 a{
+  text-decoration: none;
+  color: var(--text-color-body);
+}
+.tag4 a{
+  text-decoration: none;
+  color: var(--text-color-body);
+}
+.caja1, .caja2, .caja3, .caja4{
+  display: flex;
+  padding: 1rem 2rem;
+}
+.caja1 h2{
+  margin: 12% 15%;
+}
+.caja2 h2{
+  margin: 12% 15%;
+}
+.caja3 h2{
+  margin: 12% 15%;
+}
+.caja4 h2{
+  margin: 12% 15%;
+}
+/*--------------Efecto hover a las letras------------------*/
+.puntero a:hover{
+  color: #670101;
+  transition-duration: 0.8s;
+}
+/*--------------Efecto hover pintando un border------------------*/
+.puntero .tag1:hover{
+  border: #670101 0.2rem solid;
+  transition-duration: 0.2s;
+}
+.puntero .tag2:hover{
+  border: #670101 0.2rem solid;
+  transition-duration: 0.2s;
+}
+.puntero .tag3:hover{
+  border: #670101 0.2rem solid;
+  transition-duration: 0.2s;
+}
+.puntero .tag4:hover{
+  border: #670101 0.2rem solid;
+  transition-duration: 0.2s;
+}
+
+@media (max-width: 992px) {
+  .bodys{
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("/RutasTH-ADMIN/imagenes/bienvenida-Movil.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+    }
+    h1::after, h1::before{
+      display: none;
+    }
+    .caja1, .caja2, .caja3, .caja4{
+      padding: 0;
+    }
+    .caja1 h2{
+      font-size: 1.2rem;
+    }
+    .caja2 h2{
+      font-size: 1.2rem;
+    }
+    .caja3 h2{
+      font-size: 1.2rem;
+    }
+    .caja4 h2{
+      font-size: 1.2rem;
+    }
+    body img{
+      width: 7.5rem;
+    }
+}
+@media (max-width: 758px){
+  .bodys{
+    background: linear-gradient(to bottom, rgba(155, 129, 129, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("/RutasTH-ADMIN/imagenes/bienvenida-Movil1.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    }
+}

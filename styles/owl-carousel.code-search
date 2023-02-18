@@ -1,0 +1,134 @@
+# Query: owl-carousel
+# ContextLines: 1
+
+83 resultados - Archivos de 5
+
+index.html:
+   54                      <div class="col-lg-12 col-12">
+   55:                         <div class="owl-carousel owl-theme">
+   56:                             <div class="owl-carousel-info-wrap item">
+   57                                  <img src="images/Tehuacan/inicio.jpg"  
+   58:                                     class="owl-carousel-image img-fluid" alt="" >
+   59  
+   60:                                 <!-- <div class="owl-carousel-info">
+   61                                      <h4 class="mb-2">
+   62                                          Candice
+   63:                                         <img src="images/verified.png" class="owl-carousel-verified-image img-fluid"
+   64                                              alt="">
+
+   84  
+   85:                             <div class="owl-carousel-info-wrap item">
+   86                                  <img src="images/Tehuacan/catedral.jpg"
+   87:                                     class="owl-carousel-image img-fluid" alt="">
+   88  
+   89:                                 <!-- <div class="owl-carousel-info">
+   90                                      <h4 class="mb-2">
+   91                                          William
+   92:                                         <img src="images/verified.png" class="owl-carousel-verified-image img-fluid"
+   93                                              alt="">
+
+  117  
+  118:                             <div class="owl-carousel-info-wrap item">
+  119                                  <img src="images/Tehuacan/parque.png"
+  120:                                     class="owl-carousel-image img-fluid" alt="">
+  121  
+  122:                                 <!-- <div class="owl-carousel-info">
+  123                                      <h4 class="mb-2">Taylor</h4>
+
+  146  
+  147:                             <!-- <div class="owl-carousel-info-wrap item">
+  148:                                 <img src="images/profile/man-portrait.jpg" class="owl-carousel-image img-fluid" alt="">
+  149  
+  150:                                 <div class="owl-carousel-info">
+  151                                      <h4 class="mb-2">Nick</h4>
+
+  168  
+  169:                             <div class="owl-carousel-info-wrap item">
+  170                                  <img src="images/profile/woman-posing-black-dress-medium-shot.jpg"
+  171:                                     class="owl-carousel-image img-fluid" alt="">
+  172  
+  173:                                 <div class="owl-carousel-info">
+  174                                      <h4 class="mb-2">
+  175                                          Elsa
+  176:                                         <img src="images/verified.png" class="owl-carousel-verified-image img-fluid"
+  177                                              alt="">
+
+  195  
+  196:                             <div class="owl-carousel-info-wrap item">
+  197                                  <img src="images/profile/smart-attractive-asian-glasses-male-standing-smile-with-freshness-joyful-casual-blue-shirt-portrait-white-background.jpg"
+  198:                                     class="owl-carousel-image img-fluid" alt="">
+  199  
+  200:                                 <div class="owl-carousel-info">
+  201                                      <h4 class="mb-2">Chan</h4>
+
+css\owl.carousel.min.css:
+  5   */
+  6: .owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}
+
+css\style.css:
+  1: .owl-carousel-info-wrap item  tehuacan{
+  2      max-width: 100%;
+
+  6  
+  7: .owl-carousel-image img-fluid  tehuacan{
+  8      max-width: 100%;
+
+css\templatemo-pod-talk.css:
+  484  
+  485: .owl-carousel {
+  486    text-align: center;
+
+  488  
+  489: .owl-carousel-image {
+  490    display: block;
+
+  492  
+  493: .owl-carousel .owl-item .owl-carousel-verified-image {
+  494    display: inline-block;
+
+  506  
+  507: .owl-carousel .owl-item {
+  508    opacity: 0.35;
+
+  510  
+  511: .owl-carousel .owl-item.active.center {
+  512    opacity: 1;
+
+  514  
+  515: .owl-carousel-info-wrap {
+  516    border-radius: var(--border-radius-medium);
+
+  521  
+  522: .owl-carousel-info {
+  523    background-color: var(--section-bg-color);
+
+  539  
+  540: .owl-carousel-info-wrap .social-share,
+  541  .team-thumb .social-share {
+
+  546  
+  547: .owl-carousel-info-wrap .social-icon,
+  548  .team-thumb .social-icon {
+
+  555  
+  556: .owl-carousel .owl-item.active.center .owl-carousel-info-wrap:hover .social-icon,
+  557  .team-thumb:hover .social-icon {
+
+  561  
+  562: .owl-carousel-info-wrap .social-icon-item,
+  563: .owl-carousel-info-wrap .social-icon-link,
+  564  .team-thumb .social-icon-item,
+
+  570  
+  571: .owl-carousel-info-wrap .social-icon-link {
+  572    margin-top: 5px;
+
+  575  
+  576: .owl-carousel .owl-dots {
+  577    background-color: var(--white-color);
+
+js\custom.js:
+  30  
+  31:     $('.owl-carousel').owlCarousel({
+  32          center: true,
+             

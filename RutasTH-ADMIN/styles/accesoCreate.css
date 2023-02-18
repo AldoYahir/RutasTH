@@ -1,0 +1,73 @@
+.contenedor0{
+    background-color: var(--color-admin);
+}
+.container1 img{
+    width: 100%;
+    height: 100vh;
+}
+/*-----------------------Segundo contenedor-LOGIN--------------------------*/
+.login{
+    padding-top: 9rem;
+}
+.acceso{
+    text-align: center;
+}
+.texto{
+    color: var(--text-color-body);
+}
+.btn-text{
+    background-color: var(--color-admin2) !important;
+    color: var(--text-color-body) !important;
+    margin-top: 1rem;
+}
+.btn-text:hover{
+    background-color: var(--admin-hover) !important;
+}
+.login h3{
+    padding-bottom: 3rem;
+    color: var(--text-color-body);
+}
+.usuario i,
+.contrasenia i{
+    float: left;
+    font-size: 2rem;
+}
+.form1,
+.form2{
+    margin-left: 3rem !important;
+    max-width: 80% !important;
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: var(--text-color-body) !important;
+}
+@media (max-width: 992px) {
+    .container1{
+        display: none;
+    }
+    .container2{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("/RutasTH-ADMIN/imagenes/acceso.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    }
+    .form1,
+    .form2{
+        font-family: 1rem;
+        max-width: 100%;
+        text-align: left;
+    }
+    .usuario i,
+    .contrasenia i{
+        display: none;
+    }
+    .login {
+        overflow-y: scroll;
+        font-size: 1.5rem;
+        max-height: 100%;
+    }
+}

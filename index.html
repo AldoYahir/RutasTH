@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/colorThemes.css">
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--------------- BOOTSTRAP --------------->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!--Estilos de Carrusel-->
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/owl.carousel.min.css">
+  <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+  <link rel="stylesheet" href="styles/themeCarrousel.css">
+
+  <!-- Sweetalert2 - Mensajes de alerta -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="shortcut icon" href="imagenes/logo.png">
+  <title>RutasTH</title>
+</head>
+
+<body>
+  <!----------------------------------------------Barra de navegación---------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="imagenes/logoBlack.png" width="45" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 incisos">
+            <li class="nav-item">
+              <a class="nav-link puntero" aria-label="Página de inicio" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link puntero" aria-label="Página de rutas" href="ruta.html">RUTAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link puntero" aria-label="Cómo usar la página" href="#Ayuda">AYUDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link puntero" aria-label="Página mi perfil" href="login.html">MI CUENTA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!----------------------------------------------Bloque 1 - Portada de inicio---------------------------------------------->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 col-md-6 text-bloque-1">
+          <div>
+            <h1 class="title-bloque-1">¡TRANSPORTATE POR </br> TEHUAC&Aacute;N!</h1>
+            <p class="parrafo-bloque-1">Visita Tehuac&aacute;n y si no sabes como llegar a tu destino, nosotros te ayudamos.</p>
+            <button class="btn btn-success" type="button" onclick="empezar()">EMPIEZA TU VIAJE</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="p-1">
+            <img src="imagenes/img-home.png" height="100%" width="100%" alt="Imagen">
+          </div>
+        </div>
+      </div>
+    </div>
+  <!----------------------------------------------Bloque 2 - Encuentra tu ruta---------------------------------------------->
+    <div id="section1" class="container-all">
+      <!-------------------Primer encabezado-------------------->
+        <header class="container">
+          <div class="title-section-1">
+            <h1 class="title textColor">ENCUENTRA TU RUTA</h1>
+          </div>
+        </header>
+      <!---------------------------------------------- Checklist - Ubicación ---------------------------------------------->
+        <div class="container text-center">
+          <div class="row content-one">
+            <!-------------First Select------------>
+            <div class="col select">
+              <select id="opcionesOrigen" class="form-select opciones-rutas" onfocus="this.size=6;"
+                onblur='this.size=1;' onchange='this.size=1; this.blur();' aria-label="Lugar de origen">
+                <option selected value="0">¿Dónde te encuentras?</option>
+                <!--option value="1">here</option-->
+                <!--tanto el value como el nombre seran lo mismo-->
+              </select>
+            </div>
+            <!-------------Second Select------------>
+            <div class="col select">
+              <select id="opcionesDestino" class="form-select opciones-rutas" onfocus="this.size=6;"
+                onblur='this.size=1;' onchange='this.size=1; this.blur();' aria-label="Lugar de destino">
+                <option selected value="0">¿A d&oacute;nde te diriges?</option>
+                <!--option value="1">here</option-->
+                <!--tanto el value como el nombre seran lo mismo-->
+              </select>
+            </div>
+            <!-------------Buscador------------>
+            <div class="col">
+              <div class="buscador">
+                <button class="buscador-rutas" type="button" onclick="filtroRutas()">
+                  Buscar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!---------------------------------------------- Sección de listado de rutas ---------------------------------------------->
+          <div class="row content-two">
+            <div class="col-12 col-md-6">
+              <div class="p-1">
+                <img src="imagenes/img-home-2.png" height="100%" width="100%" alt="Imagen 2">
+              </div>
+            </div>
+            <!---------------------------------------------- Listado de rutas ---------------------------------------------->
+              <div id="section2" class="col-12 col-md-6">
+                <div class="p-2">
+                  <div class="card" style="width: 100%">
+                    <div id="contenedorRutas" class="card-body">
+                      <h1 class="card-title">LISTAS DE RUTAS</h1>
+                      <div id="lisRutas" class="lisRutas icon-lis puntero-rutas">
+                        <div class=""><a href="ruta.html">Ruta 1</a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+
+        </div>
+    </div>
+
+    <!-- Bloque 3 - Carrousel -->
+      <header class="container">
+        <div class="title-section-1">
+          <h1 class=" textColor"> Conoce y disfruta del paisaje de la cuidad de Tehuac&aacute;n</h1>
+        </div>
+      </header>
+     <section class="hero-section carrousel">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-lg-12 col-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="owl-carousel-info-wrap item">
+                            <img src="imagenes/inicio.jpg"  
+                                class="owl-carousel-image img-fluid" alt="Imagen 1, cuidad de Tehuacán" >                 
+                        </div>
+
+                        <div class="owl-carousel-info-wrap item">
+                            <img src="imagenes/catedral.png"
+                                class="owl-carousel-image img-fluid" alt="Imagen 2, iglesia catedral">
+                        </div>
+
+                        <div class="owl-carousel-info-wrap item">
+                            <img src="imagenes/parque.png"
+                                class="owl-carousel-image img-fluid" alt="Imagen 3, parque de Tehuacan">
+                        </div>
+
+                        <div class="owl-carousel-info-wrap item">
+                            <img src="imagenes/Tehuacán.png" class="owl-carousel-image img-fluid" alt="Imagen 4, Tehuacan">
+                        </div>
+
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+  <!----------------------------------------------Footer de pagina---------------------------------------------->
+  <footer class="rayitas">
+    <div class="container-fluid">
+      <div class="row">
+        <!-------------Iconos de redes sociales------------>
+        <div class="col-12 col-lg-3 textColor icon-footer ">S&iacute;guenos:</br>
+          <a href="https://www.facebook.com/Rutas-TH-117151847218445" target="_blank" aria-label="Facebook">
+            <i class="bi bi-facebook puntero"></i>
+          </a>
+          <a href="https://www.instagram.com/rutas_th/" target="_blank" aria-label="instagram">
+            <i class="bi bi-instagram puntero" aria-label="instagram"></i>
+          </a>
+          <a href="https://twitter.com/RutasTh" target="_blank" aria-label="twitter">
+            <i class="bi bi-twitter puntero"></i>
+          </a>
+        </div>
+        <!-------------Hecho por------------>
+        <div class="col-12 col-lg-6 textColor leyenda" aria-label="Hecho con amor por Smile-Soft">
+          Hecho con <i class="bi bi-heart-fill"></i> por Smile-Soft
+        </div>
+        <!-------------Logo------------>
+        <div class="col-12 col-lg-3 logo-footer">
+          <img src="imagenes/logoBlack.png" width="60" alt="LOGO">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="subir2" onclick="scrollToTop()"><i class="bi bi-arrow-up-short"></i></button>
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="scripts/index.js"></script>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/owl.carousel.min.js"></script>
+  <script src="scripts/custom.js"></script>
+  <!--script src="scripts/main.js"></script-->
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+:root{
+    font-size: 16px;
+}
+/*----------------INICIO MENU------------------------*/
+.menu{
+    list-style: none; /*Quita las viñetas*/
+    line-height: 2.625rem;/*Altura entre las opciones*/
+    margin: 2em auto; /*margen para las opciones*/
+    padding-left: 0;
+    width: 15em; /*el ancho de las li en la nav posisionada en el centro*/
+}
+.menu a{
+    background: url(/RutasTH-ADMIN/imagenes/icon0.png) no-repeat left top;
+    color: #ddd;
+    display: block;
+    padding-left: 2.625rem;
+    text-decoration: none; /*Quitamos el subrayado*/
+    /*text-transform: uppercase; Todas las letras en mayusculas*/
+    transition: all .5s;
+    width: 100%;
+}
+.menu a:hover{
+    margin-left: 1em;
+    color: var(--text-color-body);
+}
+.menu li{
+    box-shadow: 0.19rem 0  rgba(255, 255, 255, .2) inset;
+    margin-bottom: 0.32rem;
+    padding-left: 1em;
+    text-align: left;
+    /*outline: 1px solid green; Para tener border y guiarnos*/
+    transition: all .5s;
+}
+.menu li:hover{
+    box-shadow: 15em 0 rgba(255, 255, 255, .2) inset;
+}
+/*Posiciones de los iconos del menu*/
+.menu li:nth-child(2) a{
+    background-position: 0 -2.625rem;
+}
+.menu li:nth-child(3) a{
+    background-position: 0 -5.25rem;
+}
+.menu li:nth-child(4) a{
+    background-position: 0 -7.875rem;
+}
+.menu li:nth-child(5) a{
+    background-position: 0 -10.5rem;
+}
+.menu li:last-child a{
+    background-position: 0 -13.125rem;
+}
+/*----------------FIN MENU------------------------*/
+/*----------------RESPONSIVE MENU------------------------*/
+nav{
+    background-color: #2A557D;
+    /*background-color: rgba(0, 0, 0, .8);*/
+    box-sizing: border-box; /*Esto hará que al abrir el menú no realice un scroll y deforme la pagina en la que esta*/
+    padding-right: .25rem;
+    padding-top: 3em;
+    position: absolute;
+    left: -18em;
+    top: 0;
+    z-index: 10;
+    transition: all .3s;
+    height: 100%;
+}
+nav.mostrar{
+    left: 0;
+}
+#mostrar-nav{
+    position: absolute;
+    cursor: pointer;
+    top: 2em;
+    left: 2em;
+    width: 1.875rem;
+    height: 1.875rem;
+    background: url(/RutasTH-ADMIN/imagenes/menuV.png) no-repeat;
+    z-index: 20;
+}

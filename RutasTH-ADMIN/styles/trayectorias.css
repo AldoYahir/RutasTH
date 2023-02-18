@@ -1,0 +1,156 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-admin) !important;
+}
+/*-------------Contenido-----------*/
+body{
+  text-align: center;
+}
+.titulo{
+  margin-top: 3rem;
+}
+h1{
+    display: inline-block;
+    position: relative;
+    color: var(--text-color-body);
+}
+h1::after, h1::before{
+  content: '';
+  position: absolute;
+  width: 7.5rem;
+  height: 0.19rem;
+  background-color: currentColor;
+  top: 0.6em;
+}
+/*----------Moveremos las líneas de decoración del títul0---------*/
+h1::before{
+  left: -8.7rem;
+}
+h1::after{
+  right: -8.7rem;
+}
+.salir{
+font-size: 2rem;
+  
+}
+/*----------Primer Contenido - Registro---------*/
+.opciones1{
+  justify-content: center;
+}
+form{
+  text-align: right;
+  color: var(--text-color-body);
+}
+.form1,
+.form2{
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: var(--text-color-body) !important;
+    text-align: center;
+}
+.opciones div{
+  padding: 1rem 0;
+}
+.opciones div label{
+  display: none;
+}
+.opciones div label{
+  display: block;
+  color: var(--text-color-body);
+}
+.btn{
+  background-color: var(--color-admin2) !important;
+  margin: 1.2rem 0;
+}
+.btn-text{
+  color: var(--text-color-body) !important;
+}
+.btn:hover{
+  background-color: var(--admin-hover) !important;
+}
+.contenedor{
+  margin: 4rem 7rem;
+}
+/*Boton scrolly que va pa' arriba*/
+.subir2 {
+  display: inline-block;
+  color: var(--color-rutath);
+  background-color: var(--var(--contenedor-color));
+  padding: 0rem 0.37rem;
+  border: none;
+  border-radius: 3.12rem;
+  font-size:1.57rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 1.87rem;
+  right: 1.25rem;
+}
+.subir2:hover {
+  color: var(--text-color-body);
+  background-color: var(--color-hover);
+}
+/*----------El contenido del segundo contenedor-Lugares---------*/
+thead{
+  background-color: var(--admin-hover) !important;
+}
+.headTable{ 
+  text-align: left !important;
+}
+.headTable th{
+  color: var(--text-color-body);
+}
+tbody{
+  background-color: var(--color-cuadritos) !important;
+}
+.hoverTable tr:hover{
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: var(--text-color-body);
+}
+.scrollTable{
+  margin-top: -1rem;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 15rem;
+}
+/*Boton eliminar*/
+.eliminar{
+  border: none;
+  border-radius: 20%;
+  padding: 0 0.3rem;
+  font-size: 1.1rem;
+  text-align: right !important;
+  color: var(--text-color-body);
+  background-color: red;
+  
+}
+@media(max-width:991px){
+  .titulo{
+    margin-top:5rem;
+  }
+  h1::after, h1::before{
+    display: none;
+  }
+  .contenedor{
+    margin: 0 0;
+  }
+  .registro{
+    padding: 2rem 0 ;
+  }
+  .registro{
+    display: none;
+  }
+  .opciones{
+    padding: 1.5rem 0;
+  }
+  .opciones div label{
+    display: block;
+    color: var(--text-color-body);
+  }
+  .contenedor{
+    margin-bottom: 2rem;
+  }
+  }
