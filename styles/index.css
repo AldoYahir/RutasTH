@@ -126,6 +126,23 @@
     font-family: 'Roboto Condensed', serif !important;
     text-align: center;
 }
+
+/*-------------------h1 responsive-------------------*/
+@media (max-width: 768px) {
+    .alternate-font {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .alternate-font {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 320px) {
+    .alternate-font {
+      font-size: 1rem;
+    }
+  } 
 /*---------------------------------Contenedores footer del pie de página---------------------------------*/
 footer {
     padding: 1.87rem 0;
